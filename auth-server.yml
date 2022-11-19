@@ -21,14 +21,14 @@ logging:
 # and token store
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/auth
+    url: jdbc:mysql://localhost:3306/jdbc
     username: root
-    password: password
+    password: root
     driver-class: com.mysql.jdbc.Driver
 
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
-    show-sql: false
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
     hibernate:
       ddl-auto: create
 
